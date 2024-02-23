@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">yum-yum 😋</a>
+
+      <nav class="navbar">
+         <a href="home.html">Trang Chủ</a>
+         <a href="about.html">Về chúng tôi</a>
+         <a href="menu.html">Thực đơn</a>
+         <a href="orders.html">Đặt hàng</a>
+         <a href="contact.html">Liên hệ</a>
+      </nav>
+
+      <div class="icons">
+         <a href="search.html"><i class="fas fa-search"></i></a>
+         <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="name">shaikh anas</p>
+         <div class="flex">
+            <a href="profile.html" class="btn">Hồ sơ</a>
+            <a href="#" class="delete-btn">Đăng Xuất</a>
+         </div>
+         <p class="account"><a href="login.html">Đăng ký</a> or <a href="register.html">Tạo Tài Khoản</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>Đặt hàng trực tuyến</span>
+               <h3>Pizza </h3>
+               <a href="menu.html" class="btn"> Xem Thực đơn</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>Đặt hàng trực tuyến</span>
+               <h3>hamburger 2 tầng</h3>
+               <a href="menu.html" class="btn">Xem Thực đơn</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>Đặt hàng trực tuyến</span>
+               <h3>Gà nướng</h3>
+               <a href="menu.html" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<section class="category">
+
+   <h1 class="title">Danh Mục Món Ăn</h1>
+
+   <div class="box-container">
+
+      <a href="category.html" class="box">
+         <img src="images/cat-1.png" alt="">
+         <h3>Thức ăn nhanh</h3>
+      </a>
+   
+      <a href="category.html" class="box">
+         <img src="images/cat-2.png" alt="">
+         <h3>Món ăn chính</h3>
+      </a>
+   
+      <a href="category.html" class="box">
+         <img src="images/cat-3.png" alt="">
+         <h3>Nước uống</h3>
+      </a>
+   
+      <a href="category.html" class="box">
+         <img src="images/cat-4.png" alt="">
+         <h3>món tráng miệng</h3>
+      </a>
+
+   </div>
+
+</section>
+
+<section class="products">
+
+   <h1 class="title">Món ăn mới nhất</h1>
+
+   <div class="box-container">
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/pizza-1.png" alt="">
+         <a href="category.html" class="cat">Thức ăn nhanh</a>
+         <div class="name">pizaa xoáy</div>
+         <div class="flex">
+            <div class="price"><span>150.000</span>vnđ<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/dish-1.png" alt="">
+         <a href="category.html" class="cat">Đĩa</a>
+         <div class="name">Mì ý</div>
+         <div class="flex">
+            <div class="price"><span>100.000</span>vnđ<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/burger-1.png" alt="">
+         <a href="category.html" class="cat">Thức ăn nhanh</a>
+         <div class="name">hamburger phô mai</div>
+         <div class="flex">
+            <div class="price"><span>150.000</span>vnđ<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/dessert-1.png" alt="">
+         <a href="category.html" class="cat">món tráng miệng</a>
+         <div class="name">sinh tố dâu lúa mạch</div>
+         <div class="flex">
+            <div class="price"><span>75.000</span>vnđ<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/drink-1.png" alt="">
+         <a href="category.html" class="cat">nước uống</a>
+         <div class="name">nước cam</div>
+         <div class="flex">
+            <div class="price"><span>35.000</span>vnđ<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <a href="quick_view.html" class="fas fa-eye"></a>
+         <button class="fas fa-shopping-cart" type="submit" name="add_to_cart"></button>
+         <img src="uploaded_img/dish-2.png" alt="">
+         <a href="category.html" class="cat">đĩa</a>
+         <div class="name">cơm rang hải sản</div>
+         <div class="flex">
+            <div class="price"><span>65.000</span>vnđ<span>/-</span></div>
+            <input type="number" name="qty" class="qty" min="1" max="99" value="1" onkeypress="if(this.value.length == 2) return false;">
+         </div>
+      </form>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="menu.html" class="btn">veiw all</a>
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+         <img src="images/email-icon.png" alt="">
+         <h3>our email</h3>
+         <a href="mailto:shaikhanas@gmail.com">hieuminhh102002@gmail.com</a>
+         <a href="mailto:anasbhai@gmail.com">hieuminhh102002@gmail.com</a>
+      </div>
+
+      <div class="box">
+         <img src="images/clock-icon.png" alt="">
+         <h3>Giờ mở cửa</h3>
+         <p>8:10am to 9:10pm </p>
+      </div>
+
+      <div class="box">
+         <img src="images/map-icon.png" alt="">
+         <h3>Địa chỉ chúng tôi</h3>
+         <a href="https://www.google.com/maps">HaNoi, VietNam - 400104</a>
+      </div>
+
+      <div class="box">
+         <img src="images/phone-icon.png" alt="">
+         <h3>Số chúng tôi</h3>
+         <a href="tel:1234567890">+123-456-7890</a>
+         <a href="tel:1112223333">+111-222-3333</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="loader">
+   <img src="images/loader.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+
+</body>
+</html>
